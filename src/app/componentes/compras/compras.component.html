@@ -1,0 +1,14 @@
+<div>
+    <h2>Lista de la Compra = ANTONIO JOSÉ TORTAJADA </h2>
+    <input type="text" placeholder="Nueva Compra" [(ngModel)]="nuevaCompra" (keyup.enter)="agregarCompra()">
+    <button (click)="agregarCompra()">Añadir</button>
+    <hr>
+    <ul>
+      <li *ngFor="let compra of listasCompras; let i=index">{{i}}. {{compra}}
+       <button (click)="eliminarCompra(i)">Eliminar</button> 
+      </li>
+    </ul>
+    
+  </div>
+  
+  
